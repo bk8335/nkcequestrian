@@ -10,4 +10,7 @@ class StaticController < ApplicationController
 
   def about
   end
+
+  def quiz
+  end
 end
