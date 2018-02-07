@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   get '/equine_first_aid_courses', to: 'static#equine_first_aid_courses'
   get '/success_stories', to: 'static#success_stories'
   get '/free_resources', to: 'static#free_resources'
-
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
