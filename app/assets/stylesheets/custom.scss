@@ -87,9 +87,26 @@ tr:nth-child(even) {
 	width: 20%;
 }
 
+#welcome {
+  margin-top: 200px;
+}
+
+.home-main-picture {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), asset-data-url("nkc_02.jpg");
+  position: relative;
+}
+
 
 /* footer */
 footer {
+  margin-top: 20px;
 	margin-bottom: 20px;
 }
 
