@@ -5,10 +5,10 @@
 
 	<p>Want to achieve more with your horse? Improve your competition results</p>
 
-	<%= image_tag("EVENT_RIDERS.jpg", alt: "Event Riders", class: "homepage-course") %>
-	<%= image_tag("HORSE_ANATOMY_COURSE.jpg", alt: "Horse Anatomy Course", class: "homepage-course") %>
-	<%= image_tag("HORSE_FIRST_AID.jpg", alt: "Horse First Aid", class: "homepage-course") %>
-	<%= image_tag("PRACTICAL_FIRST_AID.jpg", alt: "Practical First Aid", class: "homepage-course") %>
+	<%= link_to(image_tag("EVENT_RIDERS.jpg", alt: "Event Riders", class: "homepage-course"), event_rider_clinics_path) %>
+	<%= link_to(image_tag("HORSE_ANATOMY_COURSE.jpg", alt: "Horse Anatomy Course", class: "homepage-course"), horse_anatomy_path) %>
+	<%= link_to(image_tag("HORSE_FIRST_AID.jpg", alt: "Horse First Aid", class: "homepage-course"), equine_first_aid_courses_path) %>
+	<%= link_to(image_tag("PRACTICAL_FIRST_AID.jpg", alt: "Practical First Aid", class: "homepage-course"), equine_first_aid_courses_path) %>
 
 	<p>Nicola is an experienced instructor with over 15 years teaching experience
 	<ul id="home_bullet">

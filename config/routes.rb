@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/free_resources', to: 'static#free_resources'
   get '/event-rider-clinics', to: 'static#event_rider_clinics'
   get '/faq', to: 'static#faq'
+  get '/horse-anatomy', to: 'static#horse_anatomy'
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
