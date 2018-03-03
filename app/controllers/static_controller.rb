@@ -1,6 +1,5 @@
 class StaticController < ApplicationController
   def home
-    @newsletter_subscriber = NewsletterSubscriber.new
   end
 
   def lessons

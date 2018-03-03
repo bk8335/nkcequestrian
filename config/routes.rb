@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/event-rider-clinics', to: 'static#event_rider_clinics'
   get '/faq', to: 'static#faq'
   get '/horse-anatomy', to: 'static#horse_anatomy'
+  get '/practical-first-aid', to: 'static#practical_first_aid'
   post '/newsletter-sign-up', to: 'static#newsletter_sign_up'
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

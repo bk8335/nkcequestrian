@@ -1,4 +1,6 @@
+</br>
 <div class='newsletter-form'>
+<% @newsletter_subscriber = NewsletterSubscriber.new %>
 	<h3>Want to get the latest updates from NKC Equestrain Training?</br>
 	Sign up to the newsletter below</h3>
 	<%= form_for @newsletter_subscriber, url: {action: "newsletter_sign_up"} do |f| %>
