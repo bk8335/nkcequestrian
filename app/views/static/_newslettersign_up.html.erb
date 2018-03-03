@@ -1,0 +1,13 @@
+<div class='newsletter-form'>
+	<h3>Want to get the latest updates from NKC Equestrain Training?</br>
+	Sign up to the newsletter below</h3>
+	<%= form_for @newsletter_subscriber, url: {action: "newsletter_sign_up"} do |f| %>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+		
+		<%= f.label :email %>
+		<%= f.text_field :email %>
+
+		<%= f.submit "Subscribe", class: "btn btn-info" %>
+	<% end %>
+</div>
