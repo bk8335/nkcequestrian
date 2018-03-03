@@ -74,7 +74,6 @@ tr:nth-child(even) {
 
 /* pictures */
 .picture {
-	box-shadow: 8px 8px 10px #aaa;
 	border-radius: 2%;  // partially rounded corners
 	margin: 10px;
 }
@@ -128,7 +127,7 @@ tr:nth-child(even) {
 
 .course-summary {
   margin-left: 25%;
-  margin-right: 5%;
+  margin-right: 25%;
 }
 
 li {
