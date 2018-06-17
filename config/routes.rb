@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   get '/course-walks', to: 'static#course_walks'
 
   post '/newsletter-sign-up', to: 'static#newsletter_sign_up'
+  post '/newsletter-sign-up', to: 'posts#newsletter_sign_up'
+  post '/newsletter-sign-up', to: 'application#newsletter_sign_up'
 
 
   #blog
