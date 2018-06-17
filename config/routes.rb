@@ -16,6 +16,11 @@ Rails.application.routes.draw do
   get '/course-walks', to: 'static#course_walks'
 
   post '/newsletter-sign-up', to: 'static#newsletter_sign_up'
+
+
+  #blog
+  get '/blog', to: 'posts#index'
+  resources :posts, path: 'blog'
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
