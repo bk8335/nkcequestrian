@@ -7,6 +7,10 @@ class PostsController < ApplicationController
 		@posts = Post.all.order("created_at DESC")
 	end
 
+	def draft_index
+  	@posts = Post.all.where(draft: true).order("created_at DESC")
+	end
+
 	def show
 		if request.path != post_path(@post)
 			redirect_to @post, status: :moved_permanently

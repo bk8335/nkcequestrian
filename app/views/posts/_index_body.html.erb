@@ -1,0 +1,14 @@
+<% @posts.each do |post| %>
+	<h1 class="post-title"><%= link_to post.title, post %></h1>
+	<p class="post-created-at"><%= post.created_at.strftime("%d %B %Y") %>
+	<% if post.created_at.to_date != post.updated_at.to_date %>
+		 (Updated: <%= post.updated_at.strftime("%d %B %Y") %>)
+	<% end %>	
+	<%= image_tag post.image_url.to_s, class: "img-responsive blog-image" %>
+	<p class="post-content"><%= post.content.html_safe %></p>
+	<% if session[:admin] then %>
+ 		<%= link_to edit_post_path(post), class: "btn btn-default" do %>
+ 			<span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+ 		<% end %>
+	<% end %>
+<% end %>
