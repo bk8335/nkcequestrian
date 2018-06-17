@@ -22,6 +22,7 @@ Rails.application.routes.draw do
 
   #blog
   get '/blog', to: 'posts#index'
+  get '/blog/admin', to: 'posts#admin'
   resources :posts, path: 'blog'
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
