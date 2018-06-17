@@ -1,10 +1,10 @@
 class PostsController < ApplicationController
 
+	before_action :authenticate, only: [:admin, :new, :create, :edit, :update, :destroy, :draft_index]
 	before_action :find_post, only: [:show, :edit, :update, :destroy]
-	before_action :authenticate, only: [:admin, :new, :create, :edit, :update, :destroy]
 
 	def index
-		@posts = Post.all.order("created_at DESC")
+  	@posts = Post.all.where.not(draft: true).order("created_at DESC")
 	end
 
 	def draft_index
@@ -65,7 +65,7 @@ protected
 private
 
 	def post_params
-		params.require(:post).permit(:title, :content, :image, :slug)
+		params.require(:post).permit(:title, :content, :image, :slug, :draft)
 	end
 
 	def find_post
