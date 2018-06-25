@@ -1,6 +1,5 @@
 <% provide(:title, @post.title) %>
 <h1><%= @post.title %></h1>
-<p><%= @post.created_at.strftime("%d %B %Y") %>
 <%= image_tag @post.image_url.to_s, class: "img-responsive blog-image" %>
 <p><%= @post.content.html_safe %></p>
 

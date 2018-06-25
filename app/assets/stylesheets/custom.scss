@@ -125,6 +125,13 @@ tr:nth-child(even) {
   width: 100%;
 }
 
+.blog-image {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .course-summary {
   margin-left: 25%;
   margin-right: 25%;
