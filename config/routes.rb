@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get '/free_resources', to: 'static#free_resources'
   get '/faq', to: 'static#faq'
   get '/horse-anatomy', to: 'static#horse_anatomy'
-  get '/practical-first-aid', to: 'static#practical_first_aid'
+  get '/online-first-aid', to: 'static#online_first_aid'
   get '/course-walks', to: 'static#course_walks'
 
   post '/newsletter-sign-up', to: 'static#newsletter_sign_up'
